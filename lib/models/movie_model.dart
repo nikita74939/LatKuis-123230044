@@ -178,3 +178,4 @@ List<MovieModel> movieList = [
     movieUrl: "https://en.wikipedia.org/wiki/Fight_Club",
   ),
 ];
+
