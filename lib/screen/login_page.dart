@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:latkuis/components/text_field.dart'; 
+import 'package:latkuis/components/text_field.dart';
 import 'package:latkuis/models/user.dart';
 import 'package:latkuis/screen/movie_list_page.dart';
 
@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController userC = TextEditingController();
   final TextEditingController passC = TextEditingController();
   bool isLoggedin = false;
-  String errorMessage = ""; 
+  String errorMessage = "";
 
   void _login() {
     setState(() {
@@ -47,8 +47,6 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 50),
-
             // image
             Image.asset('assets/login_img.png', width: 300),
 
@@ -116,8 +114,6 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-
-            const SizedBox(height: 30),
           ],
         ),
       ),
