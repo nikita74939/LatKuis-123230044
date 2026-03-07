@@ -60,13 +60,13 @@ lib/
 1. Clone this repository
 
 ```
-git clone https://github.com/nikita74939/latkuis-123230044.git
+git clone https://github.com/nikita74939/LatKuis-123230044.git
 ```
 
 2. Go to the project folder
 
 ```
-cdlatkuis-123230044
+cd LatKuis-123230044
 ```
 
 3. Install dependencies
