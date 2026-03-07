@@ -32,7 +32,7 @@ class MovieTile extends StatelessWidget {
           Expanded(
             child: GestureDetector(
               behavior:
-                  HitTestBehavior.opaque, // Agar area kosong tetap bisa diklik
+                  HitTestBehavior.opaque, 
               onTap: onTap,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -131,7 +131,7 @@ class MovieTile extends StatelessWidget {
           // AREA 2: Tombol Bookmark (Terpisah dari area detail)
           IconButton(
             onPressed: onBookmarkTap,
-            constraints: const BoxConstraints(), // Menghilangkan padding bawaan
+            constraints: const BoxConstraints(), 
             padding: EdgeInsets.zero,
             icon: Icon(
               isSaved ? Icons.bookmark : Icons.bookmark_outline,

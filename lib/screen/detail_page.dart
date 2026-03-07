@@ -140,8 +140,6 @@ class _DetailPageState extends State<DetailPage> {
             // go to wiki
             ElevatedButton(
               onPressed: navigateToWikipedia,
-
-              // styling
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.amber,
                 foregroundColor: Colors.white,
@@ -149,7 +147,7 @@ class _DetailPageState extends State<DetailPage> {
 
                 shape: const RoundedRectangleBorder(
                   borderRadius:
-                      BorderRadius.zero, // Membuat sudut jadi kotak tajam
+                      BorderRadius.zero,
                 ),
               ),
               child: Text(
