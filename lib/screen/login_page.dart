@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:latkuis/components/text_field.dart';
-import 'package:latkuis/models/user.dart';
-import 'package:latkuis/screen/movie_list_page.dart';
+import '../components/text_field.dart';
+import '../models/user.dart';
+import 'movie_list_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

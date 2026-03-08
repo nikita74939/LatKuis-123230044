@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:latkuis/models/movie_model.dart';
+import '../models/movie_model.dart';
 
 class MovieTile extends StatelessWidget {
   final MovieModel movie;

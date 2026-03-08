@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:latkuis/components/movie_tile.dart';
-import 'package:latkuis/models/movie_model.dart';
-import 'package:latkuis/screen/detail_page.dart';
+import '../components/movie_tile.dart';
+import '../models/movie_model.dart';
+import 'detail_page.dart';
 
 class MovieListPage extends StatefulWidget {
   final String name;
