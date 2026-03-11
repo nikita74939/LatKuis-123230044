@@ -1,14 +1,32 @@
-class MovieModel {
-  String title;
-  int year;
-  String genre;
-  String director;
-  List<String> casts;
-  double rating;
-  String synopsis;
-  String imgUrl;
-  String movieUrl;
+// =====================================================
+// FILE: movie_model.dart
+// Berisi: Blueprint data film + daftar film yang tersedia
+// =====================================================
 
+// CLASS MovieModel = "cetakan" atau "blueprint" untuk data sebuah film
+// Bayangkan ini seperti formulir kosong yang harus diisi untuk setiap film
+class MovieModel {
+
+  // =====================================================
+  // PROPERTI = kolom-kolom data yang dimiliki setiap film
+  // Setiap film WAJIB memiliki semua data di bawah ini
+  // =====================================================
+
+  String title;       // Judul film → contoh: "Inception"
+  int year;           // Tahun rilis → contoh: 2010 (int = bilangan bulat, tanpa koma)
+  String genre;       // Genre film → contoh: "Sci-Fi"
+  String director;    // Nama sutradara → contoh: "Christopher Nolan"
+  List<String> casts; // Daftar nama pemain → List = kumpulan data bertipe sama
+                      // List<String> = kumpulan teks (nama-nama pemain)
+                      // contoh: ["Leonardo DiCaprio", "Joseph Gordon-Levitt"]
+  double rating;      // Rating film → contoh: 8.8 (double = bilangan desimal/koma)
+  String synopsis;    // Sinopsis/ringkasan cerita film
+  String imgUrl;      // URL/link gambar poster film dari internet
+  String movieUrl;    // URL/link halaman Wikipedia film
+
+  // Constructor: cara membuat objek MovieModel baru
+  // Mirip seperti mengisi formulir — semua field wajib diisi (required)
+  // "this.title" artinya nilai yang dikirim langsung disimpan ke properti "title"
   MovieModel({
     required this.title,
     required this.year,
@@ -22,7 +40,19 @@ class MovieModel {
   });
 }
 
+// =====================================================
+// movieList = variabel global berisi daftar semua film
+//
+// List<MovieModel> = kumpulan objek bertipe MovieModel
+// Variabel ini bisa diakses dari file mana saja di project
+// karena didefinisikan di luar class (level global)
+// =====================================================
 List<MovieModel> movieList = [
+
+  // Setiap MovieModel(...) di bawah adalah SATU objek film
+  // yang dibuat menggunakan blueprint MovieModel di atas
+
+  // ---- FILM 1 ----
   MovieModel(
       title: "Inception",
       year: 2010,
